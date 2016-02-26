@@ -1,0 +1,39 @@
+body {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(0,1,1,0.2);
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+header {
+  min-height: 56px;
+  margin: 0;
+}
+
+header .container {
+  background: #fff;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  src: url(../fonts/ptsans.woff);
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  src: url(../fonts/ptsansbold.woff);
+}
