@@ -4,6 +4,7 @@ body {
   font-weight: 400;
   background: #f2f2f2;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .container {
@@ -14,16 +15,83 @@ body {
 
 ul {
   margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 header {
   min-height: 56px;
-  margin: 0;
+  font-weight: 700;
+  position: relative;
 }
 
-header .container {
-  background: #fff;
+header .container { background: #fff; }
+
+.main-menu ul,
+.main-menu li,
+.main-menu a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-menu a {
+  width: 239px;
+  box-sizing: border-box;
+  padding: 18px;
+  padding-bottom: 19px;
+  text-align: center;
+}
+
+.main-menu a:hover { color: #81b3d2; }
+
+.main-menu a:active {
+  color: #000;
+  opacity: 0.3;
+}
+
+.main-menu .current-btn,
+.main-menu .current-btn:active {
+  color: #766357;
+}
+
+.main-menu .current-btn:hover { color: #604e43; }
+
+.main-menu .current-btn:active { opacity: 0.3; }
+
+.main-menu .logo-btn {
+	width: 138px;
+	height: 70px;
+  margin-left: 53px;
+  margin-bottom: -14px;
+	background-image: url("../img/sprt.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.header-left-list { float: left; }
+
+.header-right-list { float: right; }
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @font-face {
