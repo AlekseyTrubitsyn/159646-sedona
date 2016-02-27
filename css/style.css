@@ -155,8 +155,8 @@ header .container { background: #fff; }
 
 .features-text h2 {
   /*width: 150px;*/
-	margin: 0 auto;
-	margin-bottom: 24px;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 /*.features-text p:first-of-type { margin-bottom: 23px; }*/
@@ -174,8 +174,8 @@ header .container { background: #fff; }
 }
 
 .feature h2 {
-	padding-top: 100px;
-	margin-bottom: 24px;
+  padding-top: 100px;
+  margin-bottom: 24px;
 }
 
 .features-without-illustrations-list h2 { padding-top: 0; }
