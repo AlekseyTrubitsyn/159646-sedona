@@ -187,6 +187,51 @@ header .container { background: #fff; }
   /*margin: 0;*/
 }
 
+.booking-and-map-box {
+  background: #fff;
+  padding: 0 40px;
+  padding-top: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.booking-and-map-box .p-like-header {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 22px;
+  line-height: 40px;
+}
+
+.booking-and-map-box p {
+  margin: 0 auto;
+  line-height: 24px;
+}
+
+.search-form-btn {
+  width: 568px;
+  box-sizing: border-box;
+  margin: 48px auto 0;
+  padding: 28px 20px 30px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.brown-btn {
+  background: #766357;
+  display: block;
+  color: #fff;
+  font-weight: 700;
+}
+
+.brown-btn:hover { background: #604e43; }
+
+.brown-btn:active {
+  background: #503e33;
+  color: #6c5d54;
+  color: rgba(255,255,255, 0.3);
+}
+
 /* ----- */
 .visually-hidden {
   border: 0;
