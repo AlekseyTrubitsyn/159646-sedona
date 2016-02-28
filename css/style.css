@@ -121,8 +121,8 @@ header .container { background: #fff; }
 }
 
 .intro-info h1 {
-	width: 450px;
-	margin: 0 auto;
+  width: 450px;
+  margin: 0 auto;
   margin-bottom: 32px;
 }
 
@@ -133,13 +133,13 @@ header .container { background: #fff; }
 }
 
 .features-text {
-	width: 400px;
-	height: 256px;
-	padding: 51px 59px;
-	box-sizing: border-box;
-	overflow: auto;
-	float: left;
-	text-align: center;
+  width: 400px;
+  height: 256px;
+  padding: 51px 59px;
+  box-sizing: border-box;
+  overflow: auto;
+  float: left;
+  text-align: center;
 }
 
 .features-text:nth-child(2n) {float: right;}
@@ -252,17 +252,18 @@ footer {
 }
 
 .footer-hash-tag-btn {
-	font-weight: 700;
-	padding: 13px;
-	margin-left: 85px;
-	float: left;
-	font-size: 21px;
-	line-height: 26px;
+  font-weight: 700;
+  padding: 13px;
+  margin-left: 85px;
+  float: left;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .footer-social {
   float: left;
-  margin-left: 250px;
+  margin-left: 244px;
+  margin-top: 5px;
 }
 
 .social-btn {
@@ -277,6 +278,8 @@ footer {
 .footer-copyright {
   float: right;
   padding: 15px 0;
+  margin-right: 78px;
+  margin-top: 2px;
 }
 
 .footer-copyright-btn {
