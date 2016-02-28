@@ -147,7 +147,7 @@ header .container { background: #fff; }
 .feature-number { margin-bottom: 23px; }
 
 .features-text h2,
-.feature h2 {
+.feature-title {
   font-weight: 700;
   font-size: 21px;
   text-align: center;
@@ -155,12 +155,9 @@ header .container { background: #fff; }
 }
 
 .features-text h2 {
-  /*width: 150px;*/
   margin: 0 auto;
   margin-bottom: 24px;
 }
-
-/*.features-text p:first-of-type { margin-bottom: 23px; }*/
 
 .features-list {
   min-height: 330px;
@@ -174,9 +171,21 @@ header .container { background: #fff; }
   padding: 60px 50px;
 }
 
-.feature h2 {
+.feature-title {
   padding-top: 100px;
   margin-bottom: 24px;
+  position: relative;
+}
+
+.feature-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 76px;
+  background: url(../img/sprt.png) no-repeat;
 }
 
 .features-without-illustrations-list h2 { padding-top: 0; }
