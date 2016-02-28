@@ -39,6 +39,7 @@ h2 {
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
   /*box-shadow: 0px 5px 15px rgba(0,1,1,0.2);*/
 }
 
@@ -230,6 +231,61 @@ header .container { background: #fff; }
   background: #503e33;
   color: #6c5d54;
   color: rgba(255,255,255, 0.3);
+}
+
+.map {
+  margin: 0;
+  padding: 0;
+  height: 593px;
+  background: url("../img/map.jpg") no-repeat;
+}
+
+footer {
+  min-height: 120px;
+  background: #fff;
+  padding: 33px;
+}
+
+.footer-index {
+  background: rgba(255,255,255,0.9);
+  margin-top: -120px;
+}
+
+.footer-hash-tag-btn {
+	font-weight: 700;
+	padding: 13px;
+	margin-left: 85px;
+	float: left;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.footer-social {
+  float: left;
+  margin-left: 250px;
+}
+
+.social-btn {
+  float: left;
+  width: 46px;
+  height: 46px;
+  background: url("../img/sprt.png") no-repeat;
+  font-size: 0;
+  margin-right: 6px;
+}
+
+.footer-copyright {
+  float: right;
+  padding: 15px 0;
+}
+
+.footer-copyright-btn {
+  float: right;
+  margin-top: -10px;
+  width: 113px;
+  height: 39px;
+  background: url("../img/sprt.png") no-repeat;
+  font-size: 0;
 }
 
 /* ----- */
