@@ -1,3 +1,17 @@
+img {
+  max-width: 100%;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
@@ -147,6 +161,7 @@ header .container { background: #fff; }
 .feature-number { margin-bottom: 23px; }
 
 .features-text h2,
+.feature h2,
 .feature-title {
   font-weight: 700;
   font-size: 21px;
@@ -154,7 +169,8 @@ header .container { background: #fff; }
   line-height: 22px;
 }
 
-.features-text h2 {
+.features-text h2,
+.feature h2 {
   margin: 0 auto;
   margin-bottom: 24px;
 }
@@ -203,6 +219,7 @@ header .container { background: #fff; }
   padding-top: 50px;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
 }
 
 .booking-and-map-box .p-like-header {
@@ -298,6 +315,113 @@ footer {
   height: 39px;
   background: url("../img/sprt.png") no-repeat;
   font-size: 0;
+}
+
+.blue-btn {
+  border: none;
+  background-color: #81b3d2;
+  color: #fff;
+  font-weight: 700;
+}
+
+.popup-form {
+  display: block;
+  position: absolute;
+}
+
+.booking-popup {
+  left: 50%;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  margin-left: -284px;
+  width: 570px;
+  min-height: 395px;
+  box-sizing: border-box;
+  padding: 55px;
+  font-weight: 700;
+}
+
+.booking-popup input {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 10px 17px;
+}
+
+.booking-popup-date-inputs {
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.booking-popup * { box-sizing: border-box; }
+
+.booking-popup label,
+.booking-popup input {
+  float: left;
+  padding: 9px 0;
+}
+
+.booking-popup label {
+  width: 110px;
+  text-align: left;
+}
+
+.booking-popup-date-inputs input {
+  cursor: pointer;
+  width: 350px;
+  height: 38px;
+  padding: 10px 15px;
+  padding-right: 45px;
+  outline: none;
+}
+
+.booking-form-calendar-icon {
+	position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background: #f2f2f2 url(../img/sprt.png);
+}
+
+.booking-popup-count-inputs {
+  float: left;
+  margin-bottom: 56px;
+}
+
+.booking-popup-count-inputs:nth-of-type(2n) { float: right; }
+
+.booking-popup-count-inputs:nth-of-type(2n) label { width: 68px; }
+
+.booking-form-count-button {
+  float: left;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0;
+}
+
+.booking-form-count-input {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+}
+
+.booking-form-icon-minus,
+.booking-form-icon-plus {
+  background-image: url(../img/sprt.png);
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+}
+
+.booking-popup .blue-btn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 /* ----- */
