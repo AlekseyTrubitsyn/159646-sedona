@@ -124,7 +124,6 @@ header .container { background: #fff; }
 .main-menu-right { float: right; }
 
 .intro-info {
-  /*width: 1200px;*/
   min-height: 216px;
   box-sizing: border-box;
   padding: 58px 20px;
@@ -150,6 +149,8 @@ header .container { background: #fff; }
 .filters-block h2 {
   font-weight: 700;
   margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 14px;
 }
 
 .filter-left {
@@ -157,38 +158,51 @@ header .container { background: #fff; }
   width: 240px;
 }
 
+.filter-left:nth-of-type(2) { padding-left: 15px; }
+
 .filter-left input { display: none; }
 
 .filter-left label {
   display: block;
   padding-left: 40px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
+  line-height: 22px;
+  position: relative;
+}
+
+.filter-left label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: url(../img/sprt.png);
 }
 
 .filter-right {
   float: right;
-  width: 317px;
+  width: 31%;
+  box-sizing: border-box;
+  padding-left: 10px;
 }
 
-.filter-right label {
-  padding-left: 65px;
+.filter-right h2 {
+  margin-left: -10px;
+  margin-bottom: 13px;
 }
 
-.filter-right input {
-  background: none;
-  border: none;
-  width: 40px;
-}
-
-.filter-cost-inputs-block {
+.filter-price-inputs-block {
   display: block;
   border: 2px solid #fff;
   border-radius: 2px;
-  padding: 9px 0;
+  padding: 5px 0;
   position: relative;
+  margin-bottom: 10px;
+  line-height: 0;
 }
 
-.filter-cost-inputs-block:after {
+.filter-price-inputs-block:after {
   content: "";
   position: absolute;
   top: 5px;
@@ -196,8 +210,92 @@ header .container { background: #fff; }
   left:50%;
   transform: translateX(-50%);
   width: 2px;
-  /*height: 100%;*/
   background: #fff;
+}
+
+.filter-price-inputs-line {
+  width: 49%;
+  display: inline-block;
+  line-height: 22px;
+}
+
+.filter-right label {
+  width: 52%;
+  float: left;
+  text-align: right;
+}
+
+.filter-price-inputs-line:nth-of-type(2) label { width: 47%; }
+
+.filter-price-input {
+  background: none;
+  border: none;
+  float: left;
+  width: 48%;
+  text-align: left;
+  padding: 0 5px;
+  box-sizing: border-box;
+  line-height: 22px;
+}
+
+.filter-price-toggles-box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
+  height: 20px;
+}
+
+.filter-price-toggles-bar {
+  top: 10px;
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.filter-price-toggles-filled-bar {
+  display: block;
+  position: absolute;
+  left: 10px;
+  right: 55px;
+  height: 2px;
+  background: #fff;
+}
+
+.filter-price-toggle {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.filter-price-toggle:hover { background: #1c4f80; }
+
+.filter-price-toggle-left { left:0%; }
+
+.filter-price-toggle-right {
+  right: 17.4%;
+  transform: translateX(50%);
+}
+
+.filter-price-show-button {
+  display: block;
+  min-width: 137px;
+  min-height: 36px;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  margin-left: 26%;
 }
 
 .features-text-photo {
@@ -268,10 +366,7 @@ header .container { background: #fff; }
 
 .features-without-illustrations-list .feature { padding-top: 45px; }
 
-.feature p {
-  text-align: center;
-  /*margin: 0;*/
-}
+.feature p { text-align: center; }
 
 .booking-and-map-box {
   background: #fff;

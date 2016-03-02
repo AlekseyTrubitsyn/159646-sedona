@@ -45,20 +45,32 @@
       <div class="filter-left">
         <h2>Тип жилья:</h2>
         <input class="filter-input" type="checkbox" name="filter-hotel-type" id="filter-checkbox-hotel-type-hotel">
-        <label class="filter-label" for="filter-checkbox-hotel-type-hotel">Отель</label>
+        <label class="filter-label" for="filter-checkbox-hotel-type-hotel">Гостиница</label>
         <input class="filter-input" type="checkbox" name="filter-hotel-type" id="filter-checkbox-hotel-type-motel">
         <label class="filter-label" for="filter-checkbox-hotel-type-motel">Мотель</label>
         <input class="filter-input" type="checkbox" name="filter-hotel-type" id="filter-checkbox-hotel-type-apartments">
         <label class="filter-label" for="filter-checkbox-hotel-type-apartments">Апартаменты</label>
       </div>
-      <div class="filter-right">
+      <div class="filter-right clearfix">
         <h2>Стоимость в сутки (р):</h2>
-        <div class="filter-cost-inputs-block">
-          <label for="filter-input-cost-from">От</label>
-          <input type="number" min="0" max="99999" id="filter-input-cost-from" value="0">
-          <label for="filter-input-cost-to">До</label>
-          <input type="number" min="0" max="99999" id="filter-input-cost-to" value="3000">
+        <div class="filter-price-inputs-block">
+          <div class="filter-price-inputs-line">
+            <label for="filter-price-input-from">От</label>
+            <input class="filter-price-input" type="number" min="0" max="99999" id="filter-input-cost-from" value="0">
+          </div>
+          <div class="filter-price-inputs-line">
+            <label for="filter-price-input-to">До</label>
+            <input class="filter-price-input" type="number" min="0" max="99999" id="filter-input-cost-to" value="3000">
+          </div>
         </div>
+        <div class="filter-price-toggles-box">
+          <div class="filter-price-toggles-bar">
+            <div class="filter-price-toggles-filled-bar" id="filter-price-toggles-filled-bar"></div>
+          </div>
+          <div class="filter-price-toggle filter-price-toggle-left" id="filter-price-toggle-left"></div>
+          <div class="filter-price-toggle filter-price-toggle-right" id="filter-price-toggle-right"></div>
+        </div>
+        <button class="filter-price-show-button" type="submit">Показать</button>
       </div>
     </form>
   </body>
