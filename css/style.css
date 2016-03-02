@@ -140,6 +140,66 @@ header .container { background: #fff; }
   margin-bottom: 32px;
 }
 
+.filters-block {
+  height: 217px;
+  background: url(../img/bg-filters.jpg);
+  padding: 30px 72px 15px;
+  color: #fff;
+}
+
+.filters-block h2 {
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.filter-left {
+  float: left;
+  width: 240px;
+}
+
+.filter-left input { display: none; }
+
+.filter-left label {
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 23px;
+}
+
+.filter-right {
+  float: right;
+  width: 317px;
+}
+
+.filter-right label {
+  padding-left: 65px;
+}
+
+.filter-right input {
+  background: none;
+  border: none;
+  width: 40px;
+}
+
+.filter-cost-inputs-block {
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  padding: 9px 0;
+  position: relative;
+}
+
+.filter-cost-inputs-block:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 2px;
+  /*height: 100%;*/
+  background: #fff;
+}
+
 .features-text-photo {
   height: 256px;
   background: #81b3d2;
@@ -296,7 +356,7 @@ footer {
   float: left;
   width: 46px;
   height: 46px;
-  background: url("../img/sprt.png") no-repeat;
+  background-image: url("../img/sprt.png");
   font-size: 0;
   margin-right: 6px;
 }
@@ -322,7 +382,12 @@ footer {
   background-color: #81b3d2;
   color: #fff;
   font-weight: 700;
+  transition: background-color 0.2s;
 }
+
+.blue-btn:hover {  background-color: #669ec0; }
+
+.blue-btn:active {  background-color: #5496bd; }
 
 .popup-form {
   display: block;

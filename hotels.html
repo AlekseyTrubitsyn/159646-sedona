@@ -32,5 +32,34 @@
         </nav>
       </div>
     </header>
+    <form class="filters-block container" action="" method="get">
+      <div class="filter-left">
+        <h2>Инфраструктура:</h2>
+        <input class="filter-input" type="checkbox" name="filter-infrastructure" id="filter-checkbox-infrastructure-pool">
+        <label class="filter-label" for="filter-checkbox-infrastructure-pool">Бассейн</label>
+        <input class="filter-input" type="checkbox" name="filter-infrastructure" id="filter-checkbox-infrastructure-parking">
+        <label class="filter-label" for="filter-checkbox-infrastructure-parking">Парковка</label>
+        <input class="filter-input" type="checkbox" name="filter-infrastructure" id="filter-checkbox-infrastructure-wifi">
+        <label class="filter-label" for="filter-checkbox-infrastructure-wifi">wi-fi</label>
+      </div>
+      <div class="filter-left">
+        <h2>Тип жилья:</h2>
+        <input class="filter-input" type="checkbox" name="filter-hotel-type" id="filter-checkbox-hotel-type-hotel">
+        <label class="filter-label" for="filter-checkbox-hotel-type-hotel">Отель</label>
+        <input class="filter-input" type="checkbox" name="filter-hotel-type" id="filter-checkbox-hotel-type-motel">
+        <label class="filter-label" for="filter-checkbox-hotel-type-motel">Мотель</label>
+        <input class="filter-input" type="checkbox" name="filter-hotel-type" id="filter-checkbox-hotel-type-apartments">
+        <label class="filter-label" for="filter-checkbox-hotel-type-apartments">Апартаменты</label>
+      </div>
+      <div class="filter-right">
+        <h2>Стоимость в сутки (р):</h2>
+        <div class="filter-cost-inputs-block">
+          <label for="filter-input-cost-from">От</label>
+          <input type="number" min="0" max="99999" id="filter-input-cost-from" value="0">
+          <label for="filter-input-cost-to">До</label>
+          <input type="number" min="0" max="99999" id="filter-input-cost-to" value="3000">
+        </div>
+      </div>
+    </form>
   </body>
 </hmtl>
