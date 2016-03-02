@@ -180,6 +180,13 @@ header .container { background: #fff; }
   background: url(../img/sprt.png);
 }
 
+.filter-label:hover::before { background-position: -20px 0; }
+.filter-label:disabled::before { background-position: -30px 0; }
+
+.filter-input:checked + .filter-label::before { background-position: -10px 0; }
+.filter-input:checked + .filter-label:hover::before { background-position: -10px -10px; }
+.filter-input:checked + .filter-label:disabled::before { background-position: -10px -20px; }
+
 .filter-right {
   float: right;
   width: 31%;
@@ -296,6 +303,11 @@ header .container { background: #fff; }
   text-transform: uppercase;
   padding: 6px 10px;
   margin-left: 26%;
+}
+
+.filter-price-show-button:hover {
+  background: #fff;
+  color: #000;
 }
 
 .features-text-photo {
