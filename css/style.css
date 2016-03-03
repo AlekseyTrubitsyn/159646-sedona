@@ -168,6 +168,7 @@ header .container { background: #fff; }
   margin-bottom: 24px;
   line-height: 22px;
   position: relative;
+  cursor: pointer;
 }
 
 .filter-left label::before {
@@ -175,17 +176,19 @@ header .container { background: #fff; }
   position: absolute;
   left: 0;
   top: 0;
-  width: 22px;
+  width: 25px;
   height: 22px;
-  background: url(../img/sprt.png);
+  background: url(../img/sprt.png) 0px -70px;
 }
 
-.filter-label:hover::before { background-position: -20px 0; }
-.filter-label:disabled::before { background-position: -30px 0; }
+.filter-input:disabled + .filter-label { cursor: default; }
 
-.filter-input:checked + .filter-label::before { background-position: -10px 0; }
-.filter-input:checked + .filter-label:hover::before { background-position: -10px -10px; }
-.filter-input:checked + .filter-label:disabled::before { background-position: -10px -20px; }
+.filter-label:hover::before { background-position: 0px -100px; }
+.filter-input:disabled + .filter-label::before { background-position: 0px -130px; }
+
+.filter-input:checked + .filter-label::before { background-position: -30px -70px; }
+.filter-input:checked + .filter-label:hover::before { background-position: -30px -100px; }
+.filter-input:checked:disabled + .filter-label::before { background-position: -30px -130px; }
 
 .filter-right {
   float: right;
