@@ -313,6 +313,81 @@ header .container { background: #fff; }
   color: #000;
 }
 
+.search-result-title-box {
+  padding: 28px 72px;
+  background: #fff;
+}
+
+.search-result-title-box {
+  font-size: 12px;
+}
+
+.search-result-title-box h2 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 21px;
+  margin-right: 26px;
+}
+
+.search-result-title-box > span,
+.search-result-title-sort-type-active,
+.search-result-title-sort-type {
+  margin: 0 18px;
+}
+
+.search-result-title-sort-type-active,
+.search-result-title-sort-type {
+  margin-right: 13px;
+}
+
+.search-result-title-sort-type:hover,
+.search-result-title-sort-type-active {
+  color: #81b3d2;
+}
+
+.search-result-title-sort-type {
+  color: rgba(0,0,0,0.3);
+  display: inline-block;
+  border-bottom: 1px dotted #81b3d2;
+  line-height: 13px;
+}
+
+.search-result-title-sort-type:active {
+  color: #000;
+  border-bottom: none;
+}
+
+.search-result-title-sort-arrows-block {
+  float: right;
+  margin-top: 8px;
+  margin-right: 2px;
+}
+
+.sort-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0;
+  width: 11px;
+  height: 10px;
+  background: url(../img/sprt.png) no-repeat;
+}
+
+.sort-arrow-up { background-position: -150px -70px; }
+.sort-arrow-up:hover { background-position: -150px -100px; }
+
+.sort-arrow-up:active,
+.sort-arrow-up-current {
+  background-position: -150px -130px;
+}
+
+.sort-arrow-down { background-position: -170px -70px; }
+.sort-arrow-down:hover { background-position: -170px -100px; }
+
+.sort-arrow-down:active,
+.sort-arrow-down-current {
+  background-position: -170px -130px;
+}
+
 .features-text-photo {
   height: 256px;
   background: #81b3d2;
