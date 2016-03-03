@@ -332,7 +332,7 @@ header .container { background: #fff; }
 
 .features-text h2,
 .feature h2,
-.feature-title {
+.feature-title-image {
   font-weight: 700;
   font-size: 21px;
   text-align: center;
@@ -357,22 +357,36 @@ header .container { background: #fff; }
   padding: 60px 50px;
 }
 
-.feature-title {
+.feature-title-image {
   padding-top: 100px;
   margin-bottom: 24px;
   position: relative;
 }
 
-.feature-title::before {
+.feature-title-image::before {
   content: "";
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 64px;
-  height: 76px;
+  width: 75px;
+  height: 72px;
   background: url(../img/sprt.png) no-repeat;
 }
+
+ .feature-title-image-home::before { background-position: -130px -208px; }
+
+ .feature-title-image-food::before {
+   background-position: -205px -208px;
+   width: 74px;
+   height: 70px;
+ }
+
+ .feature-title-image-gift::before {
+   background-position: -205px -130px;
+   width: 64px;
+   height: 76px;
+ }
 
 .features-without-illustrations-list h2 { padding-top: 0; }
 
@@ -464,9 +478,21 @@ footer {
   width: 46px;
   height: 46px;
   background-image: url("../img/sprt.png");
+  background-repeat: no-repeat;
+  background-position: 0px -160px;
   font-size: 0;
   margin-right: 6px;
 }
+
+.social-btn-fb { background-position: -50px -160px; }
+
+.social-btn-yt { background-position: -100px -160px; }
+
+.social-btn-tw:active { background-position: 0px -325px; }
+
+.social-btn-fb:active { background-position: -50px -325px; }
+
+.social-btn-yt:active { background-position: -100px -325px; }
 
 .footer-copyright {
   float: right;
@@ -475,14 +501,22 @@ footer {
   margin-top: 2px;
 }
 
+.footer-copyright span {
+  margin-right: 8px;
+}
+
 .footer-copyright-btn {
   float: right;
   margin-top: -10px;
   width: 113px;
   height: 39px;
-  background: url("../img/sprt.png") no-repeat;
+  background: url("../img/sprt.png") no-repeat 0px -208px;
   font-size: 0;
 }
+
+.footer-copyright-btn:hover { background-position: 0px -247px; }
+
+.footer-copyright-btn:active { background-position: 0px -286px; }
 
 .blue-btn {
   border: none;
@@ -539,21 +573,37 @@ footer {
 .booking-popup-date-inputs input {
   cursor: pointer;
   width: 350px;
+  box-sizing: border-box;
   height: 38px;
   padding: 10px 15px;
   padding-right: 45px;
   outline: none;
+  transition: background 0.2s;
 }
 
 .booking-form-calendar-icon {
-	position: absolute;
+  position: absolute;
   cursor: pointer;
   top: 0;
   right: 0;
-  width: 38px;
-  height: 38px;
-  background: #f2f2f2 url(../img/sprt.png);
+  width: 22px;
+  height: 22px;
+  margin: 8px;
+  background: url(../img/sprt.png) -100px -70px;
 }
+
+.booking-popup input:hover { background: #ebebeb; }
+
+.booking-popup-date-inputs:hover .booking-form-calendar-icon { background-position: -100px -100px; }
+
+.booking-popup input:active {
+  background: #fff;
+  border: 2px solid #e5e5e5;
+}
+
+.booking-popup-date-inputs input:active { padding-left: 13px; }
+
+.booking-popup-date-inputs:active .booking-form-calendar-icon { background-position: -100px -130px; }
 
 .booking-popup-count-inputs {
   float: left;
@@ -582,10 +632,30 @@ footer {
 .booking-form-icon-minus,
 .booking-form-icon-plus {
   background-image: url(../img/sprt.png);
-  width: 38px;
-  height: 38px;
-  display: inline-block;
+  display: block;
+  margin: 50% auto;
+  transform: translateY(-50%);
 }
+
+.booking-form-icon-minus {
+  background-position: -60px -70px;
+  width: 12px;
+  height: 3px;
+}
+
+.booking-form-count-button:hover .booking-form-icon-minus { background-position: -60px -100px; }
+
+.booking-form-count-button:active .booking-form-icon-minus { background-position: -60px -130px; }
+
+.booking-form-icon-plus {
+  background-position: -80px -70px;
+  width: 11px;
+  height: 11px;
+}
+
+.booking-form-count-button:hover .booking-form-icon-plus { background-position: -80px -100px; }
+
+.booking-form-count-button:active .booking-form-icon-plus { background-position: -80px -130px; }
 
 .booking-popup .blue-btn {
   display: block;
