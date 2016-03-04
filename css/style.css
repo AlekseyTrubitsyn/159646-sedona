@@ -314,12 +314,13 @@ header .container { background: #fff; }
 }
 
 .search-result-title-box {
-  padding: 28px 72px;
+  padding: 29px 71px;
   background: #fff;
 }
 
 .search-result-title-box {
   font-size: 12px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .search-result-title-box h2 {
@@ -387,6 +388,70 @@ header .container { background: #fff; }
 .sort-arrow-down-current {
   background-position: -170px -130px;
 }
+
+.search-result-item {
+  padding: 25px 72px 30px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-result-item-image {
+  margin-right: 30px;
+  float: left;
+  margin-top: 5px;
+}
+
+.search-result-item-description,
+.search-result-item-description-left,
+.search-result-item-description-right {
+  float: left;
+ }
+
+.search-result-item-description-left { margin-right: 5px; }
+
+.search-result-item-description h2 {
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.search-result-item-description p {
+  margin-bottom: 15px;
+  line-height: 21px;
+}
+
+.search-result-item-description a {
+  padding: 4px 17px;
+  display: block;
+}
+
+.search-result-item-rating { float: right; }
+
+.search-result-item-rating-stars {
+  display: block;
+  text-align: right;
+  min-width: 27px;
+  height: 27px;
+  margin-bottom: 43px;
+}
+
+.search-result-item-rating-star {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  margin: 4px 1px;
+  background: url(../img/sprt.png) no-repeat -130px -70px;
+}
+
+.search-result-item-rating-text {
+  color: #666;
+  padding: 1px 14px;
+  background: #f2f2f2;
+  min-width: 10px;
+  float: right;
+}
+/* */
 
 .features-text-photo {
   height: 256px;
@@ -575,7 +640,7 @@ footer {
 .footer-copyright {
   float: right;
   padding: 15px 0;
-  margin-right: 78px;
+  margin-right: 71px;
   margin-top: 2px;
 }
 
@@ -606,7 +671,10 @@ footer {
 
 .blue-btn:hover {  background-color: #669ec0; }
 
-.blue-btn:active {  background-color: #5496bd; }
+.blue-btn:active {
+  background-color: #5496bd;
+  color: rgba(255,255,255,0.3);
+}
 
 .popup-form {
   display: block;
