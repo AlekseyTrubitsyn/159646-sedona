@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="container clearfix">
-        <nav class="main-menu">
+        <nav class="main-menu clearfix">
           <ul class="main-menu-left">
             <li>
               <a href="#">Информация</a>
@@ -33,11 +33,10 @@
       </div>
     </header>
     <div class="index-intro container">
-      <div class="container">
-        <img src="img/intro.jpg" width="1200" height="508">
-        <div class="intro-info">
-          <h1>СЕДОНА &mdash; небольшой городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!</h1>
-          <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+      <div class="intro-images"></div>
+      <div class="intro-info">
+        <h1>СЕДОНА &mdash; небольшой городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!</h1>
+        <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
       </div>
     </div>
     <div class="features-text-photo container clearfix">
@@ -46,7 +45,7 @@
         <p class="feature-number">&ndash; №1 &ndash;</p>
         <p>Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img src="img/city-1.jpg" width="800" height="256">
+      <div class="features-photo features-photo-city"></div>
     </div>
     <div class="features-list container clearfix">
       <section class="feature">
@@ -64,7 +63,7 @@
       </section>
     </div>
     <div class="features-text-photo container clearfix">
-      <img src="img/devil-bridge.jpg" width="800" height="256">
+      <div class="features-photo features-photo-bridge"></div>
       <div class="features-text">
         <h2>Там есть<br>мост дьявола</h2>
         <p class="feature-number">&ndash; №2 &ndash;</p>
@@ -128,7 +127,7 @@
           <button class="blue-btn" type="submit">Найти</button>
         </form>
     </div>
-    <div class="map" id="map"></div>
+    <div class="container map" id="map"></div>
     <footer class="footer-index container clearfix">
       <a class="footer-hash-tag-btn" href="https://twitter.com/hashtag/visitsedona">#visitsedona</a>
       <section class="footer-social clearfix">

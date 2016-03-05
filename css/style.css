@@ -51,7 +51,8 @@ h2 {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 768px;
   margin: 0 auto;
   box-sizing: border-box;
   /*box-shadow: 0px 5px 15px rgba(0,1,1,0.2);*/
@@ -78,14 +79,19 @@ header {
 
 header .container { background: #fff; }
 
+.main-menu li { width: 49%; }
+
 .main-menu li,
 .main-menu a {
   display: inline-block;
   vertical-align: top;
 }
 
+.main-menu { position: relative; }
+
 .main-menu a {
-  width: 239px;
+  /*width: 239px;*/
+  width: 100%;
   box-sizing: border-box;
   padding: 18px;
   padding-bottom: 19px;
@@ -112,16 +118,57 @@ header .container { background: #fff; }
   float: left;
   width: 138px;
   height: 70px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
   margin-bottom: -14px;
   background-image: url("../img/sprt.png");
   background-position: 0 0;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-menu-left,
+.main-menu-right {
+  width: 40%;
 }
 
 .main-menu-left { float: left; }
 
 .main-menu-right { float: right; }
+
+.intro-images {
+  background-image: url(../img/bg-intro-big.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 508px;
+  position: relative;
+  z-index: -1;
+}
+
+.intro-images::before {
+  content: "";
+  position: absolute;
+  top: 74px;
+  left: 50%;
+  width: 458px;
+  height: 352px;
+  transform: translateX(-50%);
+  background-image: url(../img/bg-intro-texts.png);
+}
+
+.intro-images::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 100%;
+  height: 57px;
+  transform: translateX(-50%);
+  background-image: url(../img/bg-intro-after-1200.png);
+  background-size: 100% 100%;
+}
 
 .intro-info {
   min-height: 216px;
@@ -460,7 +507,7 @@ header .container { background: #fff; }
 }
 
 .features-text {
-  width: 400px;
+  width: 33%;
   height: 256px;
   padding: 51px 59px;
   box-sizing: border-box;
@@ -470,6 +517,18 @@ header .container { background: #fff; }
 }
 
 .features-text:nth-child(2n) {float: right;}
+
+.features-photo {
+  display: inline-block;
+  width: 67%;
+  min-height: 100%;
+  vertical-align: top;
+  background-size: cover;
+}
+
+.features-photo-city { background-image: url(../img/city-1.jpg); }
+
+.features-photo-bridge { background-image: url(../img/devil-bridge.jpg); }
 
 .feature-number { margin-bottom: 23px; }
 
@@ -495,7 +554,7 @@ header .container { background: #fff; }
 
 .feature {
   float: left;
-  width: 400px;
+  width: 33.33%;
   box-sizing: border-box;
   padding: 60px 50px;
 }
@@ -584,7 +643,7 @@ header .container { background: #fff; }
 }
 
 .map {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 593px;
   background: url("../img/map.jpg") no-repeat;
@@ -593,7 +652,7 @@ header .container { background: #fff; }
 footer {
   min-height: 120px;
   background: #fff;
-  padding: 33px;
+  padding: 33px 0;
 }
 
 .footer-index {
@@ -601,33 +660,40 @@ footer {
   margin-top: -120px;
 }
 
+.footer-hash-tag-btn,
+footer section {
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
 .footer-hash-tag-btn {
   font-weight: 700;
-  padding: 13px;
-  margin-left: 85px;
-  float: left;
   font-size: 21px;
-  line-height: 26px;
 }
 
 .footer-social {
-  float: left;
-  margin-left: 244px;
-  margin-top: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .social-btn {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   width: 46px;
   height: 46px;
   background-image: url("../img/sprt.png");
   background-repeat: no-repeat;
   background-position: 0px -160px;
   font-size: 0;
-  margin-right: 6px;
 }
 
-.social-btn-fb { background-position: -50px -160px; }
+.social-btn-fb {
+  background-position: -50px -160px;
+	margin: 0 2px;
+}
 
 .social-btn-yt { background-position: -100px -160px; }
 
@@ -638,19 +704,16 @@ footer {
 .social-btn-yt:active { background-position: -100px -325px; }
 
 .footer-copyright {
-  float: right;
-  padding: 15px 0;
-  margin-right: 71px;
-  margin-top: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 51px;
 }
 
-.footer-copyright span {
-  margin-right: 8px;
-}
+.footer-copyright span {margin-right: 4px; }
 
 .footer-copyright-btn {
-  float: right;
-  margin-top: -10px;
+  display: inline-block;
+  vertical-align: middle;
   width: 113px;
   height: 39px;
   background: url("../img/sprt.png") no-repeat 0px -208px;
