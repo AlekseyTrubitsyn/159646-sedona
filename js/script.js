@@ -17,6 +17,11 @@ var kidsCount = bookingFormKidsCountInput.value;
 var kidsMin = Number(bookingFormKidsCountInput.min);
 var kidsMax = Number(bookingFormKidsCountInput.max);
 
+var gMapsImage = document.querySelector("#staticMap");
+
+if (gMapsImage)
+ gMapsImage.classList.add("hide-this");
+
 bookingFormShowButton.addEventListener("click", function(event) {
   event.preventDefault();
   bookingPopup.classList.remove("popup-invisible");

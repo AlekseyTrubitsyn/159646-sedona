@@ -741,7 +741,12 @@ footer section {
   position: absolute;
 }
 
-.popup-invisible { display: none; }
+.hide-this,
+.popup-invisible {
+  display: none;
+}
+
+.hide-this ~ footer { margin-top: 0; }
 
 .booking-popup {
   left: 50%;
