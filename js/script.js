@@ -34,7 +34,7 @@ bookingFormAdultsCountButtonMinus.addEventListener("click", function(event) {
   if (adultsCount > adultsMin && adultsCount <= adultsMax )
     bookingFormAdultsCountInput.value = Number(adultsCount) - 1;
 
-  else if ( kidsCount > adultsMin )
+  else if ( adultsCount > adultsMin )
     bookingFormAdultsCountInput.value = adultsMax;
 
   else
@@ -47,7 +47,7 @@ bookingFormAdultsCountButtonPlus.addEventListener("click", function(event) {
   if (adultsCount < adultsMax && adultsCount >= adultsMin)
     bookingFormAdultsCountInput.value = Number(adultsCount) + 1;
 
-  else if ( kidsCount < adultsMin )
+  else if ( adultsCount < adultsMin )
     bookingFormAdultsCountInput.value = adultsMin;
 
   else
