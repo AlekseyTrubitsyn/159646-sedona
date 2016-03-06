@@ -24,7 +24,7 @@ if (gMapsImage)
 
 bookingFormShowButton.addEventListener("click", function(event) {
   event.preventDefault();
-  bookingPopup.classList.remove("popup-invisible");
+  bookingPopup.classList.toggle("popup-invisible");
 });
 
 bookingFormAdultsCountButtonMinus.addEventListener("click", function(event) {
