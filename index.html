@@ -94,7 +94,7 @@
         <p>Укажите предполагаемые даты поездки,</p>
         <p>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="brown-btn search-form-btn" href="#">Поиск гостиницы в Седоне</a>
-        <form class="booking-popup popup-form" action="index.html" method="post">
+        <form class="booking-popup popup-form popup-invisible" action="index.html" method="post">
           <div class="booking-popup-date-inputs clearfix">
             <label for="booking-popup-departure-date-input">Дата Выезда:</label>
             <input class="booking-form-calendar-input" type="text" id="booking-form-arrival-date-input" placeholder="24 АПРЕЛЯ 2016">
@@ -117,11 +117,11 @@
           </div>
           <div class="booking-popup-count-inputs clearfix">
             <label for="booking-popup-arrival-date-input">Дети:</label>
-            <button class="booking-form-count-button" id="booking-form-adults-count-minus-button">
+            <button class="booking-form-count-button" id="booking-form-kids-count-minus-button">
               <i class="booking-form-icon-minus"></i>
             </button>
-            <input class="booking-form-count-input" type="number" id="booking-form-adults-count-input" value="2" min="1" max="9">
-            <button class="booking-form-count-button" id="booking-form-adults-count-plus-button">
+            <input class="booking-form-count-input" type="number" id="booking-form-kids-count-input" value="2" min="1" max="9">
+            <button class="booking-form-count-button" id="booking-form-kids-count-plus-button">
               <i class="booking-form-icon-plus"></i>
             </button>
           </div>
@@ -142,5 +142,6 @@
         </section>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </hmtl>

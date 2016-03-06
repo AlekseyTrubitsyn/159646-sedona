@@ -741,6 +741,8 @@ footer section {
   position: absolute;
 }
 
+.popup-invisible { display: none; }
+
 .booking-popup {
   left: 50%;
   background: rgb(255, 255, 255) none repeat scroll 0% 0%;
@@ -750,6 +752,7 @@ footer section {
   box-sizing: border-box;
   padding: 55px;
   font-weight: 700;
+  animation: throw-down 0.6s;
 }
 
 .booking-popup input {
@@ -889,6 +892,15 @@ footer section {
   display: table;
   clear: both;
 }
+
+@keyframes
+  throw-down {
+    0% { transform: translateY(-200px); }
+    40% { transform: translateY(30px); }
+    70% { transform: scaleX(1.1); }
+    99% { transform: translateY(0px); transform: scaleX(0.95); }
+    100% { transform: translateY(0px); transform: scaleX(1); }
+  }
 
 @font-face {
   font-family: 'PT Sans';
